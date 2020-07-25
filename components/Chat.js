@@ -35,7 +35,7 @@ class Chat extends Component {
   }
 
   componentWillUnmount() {
-    this.pusher.disconnect();
+    this.pusher.connect();
   }
 
   handleKeyUp = evt => {
